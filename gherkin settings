@@ -1,0 +1,28 @@
+Feature: As a Stackoverflow user
+		  I want to be able to edit my settings
+		  So I can update my account information
+
+	Scenario: I want to change my displayed name
+		Given I am at the profile page
+		When I enter a new Name
+		And I click submit
+		Then my name should be updated
+
+	Scenario: I want to change my location
+		Given I am at the profile page
+		When I enter a new Location
+		And I click submit
+		Then my Location should be updated
+
+	Scenario: I want to edit my about me
+		Given I am at the profile page
+		When I enter text into the about me box
+		And I click submit
+		Then my about me should be updated
+
+	Scenario: I want to edit my age
+		Given I am at the profile page
+		When I enter a date
+		And I click submit
+		Then my age should be updated
+

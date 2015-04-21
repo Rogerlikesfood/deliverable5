@@ -1,0 +1,28 @@
+Feature: As a Stackoverflow user
+		I want to be able to navigate through the site
+		So I can use the features I need to use
+
+	Scenario: I want to get to the questions tab
+		Given I am on the Stackoverflow home page
+		When I click on the questions tab
+		Then I should arrive at the questions page
+
+	Scenario: I want to get to the tags tab
+		Given I am on the Stackoverflow home page
+		When I click on the tags tab
+		Then I should arrive at the tags page
+
+	Scenario: I want to get to the users tab
+		Given I am on the Stackoverflow home page
+		When I click on the users tab
+		Then I should arrive at the users page
+
+	Scenario: I want to get to the badges tab
+		Given I am on the Stackoverflow home page
+		When I click on the badges tab
+		Then I should arrive at the badges page
+
+	Scenario: I want to get to the unanswered tab
+		Given I am on the Stackoverflow home page
+		When I click on the unanswered tab
+		Then I should arrive at the unanswered page

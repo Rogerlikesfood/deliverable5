@@ -1,0 +1,29 @@
+Feature: As a StackOverflow user 
+         I want to be able to sign in to my StackOverflow account 
+         So that I can manage my StackOverflow account
+
+    Scenario: I sign in with a correct username and a correct password
+		Given a correct username
+		And a correct password
+		When I try to sign with those credentials
+		Then I should be signed into my StackOverflow account
+	Scenario: I sign in with a correct username and an incorrect password
+		Given a correct username
+		And an incorrect password
+		When I try to sign with those credentials
+		Then I should receive a message stating "The password is incorrect."
+	Scenario: I sign in with a correct username and no password
+		Given a correct username
+		And no password
+		When I try to sign with those credentials
+		Then I should receive a message stating "Password cannot be empty."
+	Scenario: I sign in with an incorrect username and correct password
+		Given an incorrect username
+		And a correct password
+		When I try to sign with those credentials
+		Then I should receive a message stating ""We could not find an account for that email address."
+	Scenario: I sign in with no username and a password
+		Given no username
+		And a password
+		When I try to sign with those credentials
+		Then I should recieve a message stating "Email cannot be empty."
